@@ -1,0 +1,23 @@
+# --- Web Framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- Validation & Settings ---
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+# --- PDF Parsing ---
+PyMuPDF==1.24.10
+
+# --- Google Gemini ---
+google-generativeai==0.8.3
+
+# --- Neo4j Graph Database ---
+neo4j==5.25.0
+
+# --- File Upload Support ---
+python-multipart==0.0.12
+
+# --- Utilities ---
+httpx==0.27.2
