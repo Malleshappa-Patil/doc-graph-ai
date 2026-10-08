@@ -1,2 +1,3 @@
 .env.example
 plan.md
+backend/__pycache__
