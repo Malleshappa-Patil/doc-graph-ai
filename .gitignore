@@ -1,3 +1,16 @@
-.env.example
+# Secrets — never commit these
+.env
+
+# Docs / planning (not part of the codebase)
 plan.md
+
+# Python cache
 backend/__pycache__
+**/__pycache__
+*.pyc
+
+# Uploads directory (user data, not code)
+backend/uploads/
+
+# Virtual environment
+.venv/
