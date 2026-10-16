@@ -32,8 +32,26 @@ USAGE (anywhere in the codebase):
 ────────────────────────────────────────────────────────────────────────────────
 """
 
+from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
+
+# Resolve the .env file path relative to THIS file (config.py lives in backend/)
+# so it works no matter which directory uvicorn is started from.
+#
+#   backend/config.py  → Path(__file__).parent        = .../backend/
+#   .env lives at      → Path(__file__).parent.parent  = project root
+#
+# We check both the project root AND the backend/ directory so the user
+# can put .env in either place.
+_PROJECT_ROOT = Path(__file__).parent.parent
+_BACKEND_DIR  = Path(__file__).parent
+
+# Pick whichever .env exists; prefer project root (standard location).
+_ENV_FILE = (
+    _PROJECT_ROOT / ".env" if (_PROJECT_ROOT / ".env").exists()
+    else _BACKEND_DIR / ".env"
+)
 
 
 class Settings(BaseSettings):
@@ -48,8 +66,8 @@ class Settings(BaseSettings):
     """
 
     model_config = SettingsConfigDict(
-        # Load from .env file if it exists (won't error if file is absent)
-        env_file=".env",
+        # Absolute path — works regardless of where uvicorn is started from.
+        env_file=str(_ENV_FILE),
         env_file_encoding="utf-8",
         # Ignore extra variables in the .env file
         extra="ignore",
