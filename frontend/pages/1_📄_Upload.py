@@ -25,39 +25,38 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 .page-title {
     font-size: 2.2rem; font-weight: 700;
-    background: linear-gradient(135deg, #6C63FF, #48CAE4);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f4f4f5;
+    letter-spacing: -0.02em;
 }
 .step-header {
-    font-size: 1rem; font-weight: 600; color: #9A9AB0;
-    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.9rem; font-weight: 600; color: #a1a1aa;
+    text-transform: uppercase; letter-spacing: 0.06em;
     margin-bottom: 0.5rem;
 }
 .stat-card {
-    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
-    border: 1px solid #2A2A4A; border-radius: 14px;
+    background: #18181b;
+    border: 1px solid #27272a; border-radius: 12px;
     padding: 1.4rem; text-align: center;
 }
-.stat-num   { font-size: 2.5rem; font-weight: 700; color: #6C63FF; }
-.stat-label { font-size: 0.85rem; color: #7A7A9A; margin-top: 0.3rem; }
+.stat-num   { font-size: 2.4rem; font-weight: 700; color: #3b82f6; }
+.stat-label { font-size: 0.85rem; color: #a1a1aa; margin-top: 0.3rem; }
 
 .success-banner {
-    background: linear-gradient(135deg, #1A3A1A, #0D1F0D);
-    border: 1px solid #48BB78; border-radius: 12px;
-    padding: 1.2rem 1.5rem; margin: 1rem 0;
-    color: #48BB78; font-weight: 500;
+    background: #142217;
+    border: 1px solid #22c55e; border-radius: 10px;
+    padding: 1.1rem 1.4rem; margin: 1rem 0;
+    color: #4ade80; font-weight: 500;
 }
 .error-banner {
-    background: linear-gradient(135deg, #3A1A1A, #1F0D0D);
-    border: 1px solid #FC8181; border-radius: 12px;
-    padding: 1.2rem 1.5rem; margin: 1rem 0;
-    color: #FC8181; font-weight: 500;
+    background: #251314;
+    border: 1px solid #ef4444; border-radius: 10px;
+    padding: 1.1rem 1.4rem; margin: 1rem 0;
+    color: #f87171; font-weight: 500;
 }
 .doc-id-box {
-    background: #0D0D1A; border: 1px solid #2A2A4A; border-radius: 8px;
+    background: #18181b; border: 1px solid #27272a; border-radius: 8px;
     padding: 0.6rem 1rem; font-family: monospace;
-    font-size: 0.85rem; color: #9A9AB0; word-break: break-all;
+    font-size: 0.85rem; color: #a1a1aa; word-break: break-all;
 }
 </style>
 """, unsafe_allow_html=True)

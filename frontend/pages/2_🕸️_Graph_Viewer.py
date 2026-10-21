@@ -27,44 +27,43 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 .page-title {
     font-size: 2.2rem; font-weight: 700;
-    background: linear-gradient(135deg, #6C63FF, #48CAE4);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f4f4f5;
+    letter-spacing: -0.02em;
     margin-bottom: 0.2rem;
 }
 .stat-card {
-    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
-    border: 1px solid #2A2A4A; border-radius: 12px;
+    background: #18181b;
+    border: 1px solid #27272a; border-radius: 12px;
     padding: 1.1rem; text-align: center;
 }
-.stat-num   { font-size: 2.1rem; font-weight: 700; color: #6C63FF; }
-.stat-label { font-size: 0.8rem; color: #7A7A9A; margin-top: 0.2rem; }
+.stat-num   { font-size: 2.1rem; font-weight: 700; color: #3b82f6; }
+.stat-label { font-size: 0.8rem; color: #a1a1aa; margin-top: 0.2rem; }
 
 .type-badge {
     display: inline-block;
     padding: 0.25rem 0.65rem;
-    border-radius: 20px;
+    border-radius: 16px;
     font-size: 0.75rem;
     font-weight: 600;
     margin: 0.2rem 0.3rem 0.2rem 0;
-    color: #FFFFFF;
+    color: #09090b;
 }
 .legend-box {
-    background: #141426;
-    border: 1px solid #2A2A4A;
-    border-radius: 10px;
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
     padding: 0.75rem 1.2rem;
     margin-bottom: 1rem;
 }
-.status-ok  { color: #48BB78; font-weight: 600; }
-.status-err { color: #FC8181; font-weight: 600; }
+.status-ok  { color: #22c55e; font-weight: 600; }
+.status-err { color: #ef4444; font-weight: 600; }
 .empty-box {
-    background: linear-gradient(135deg, #1A1A2E, #0D0D1A);
-    border: 1px dashed #3D3D6B;
-    border-radius: 14px;
+    background: #18181b;
+    border: 1px dashed #3f3f46;
+    border-radius: 12px;
     padding: 3rem 2rem;
     text-align: center;
-    color: #9A9AB0;
+    color: #a1a1aa;
     margin: 2rem 0;
 }
 </style>
@@ -72,15 +71,15 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 # ── Color Palette for Entity Types ───────────────────────────────────────────
 TYPE_COLORS = {
-    "Person": "#4A90D9",        # Sky Blue
-    "Organization": "#E67E22",  # Warm Orange
-    "Product": "#2ECC71",       # Emerald Green
-    "Technology": "#9B59B6",    # Purple
-    "Location": "#E74C3C",      # Coral Red
-    "Concept": "#1ABC9C",       # Turquoise
-    "Entity": "#6C63FF",        # Default Violet
+    "Person": "#38bdf8",        # Sky Blue
+    "Organization": "#fb923c",  # Warm Orange
+    "Product": "#34d399",       # Emerald Green
+    "Technology": "#a78bfa",    # Soft Violet
+    "Location": "#f87171",      # Coral Rose
+    "Concept": "#22d3ee",       # Soft Cyan
+    "Entity": "#94a3b8",        # Muted Slate
 }
-DEFAULT_NODE_COLOR = "#6C63FF"
+DEFAULT_NODE_COLOR = "#94a3b8"
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:

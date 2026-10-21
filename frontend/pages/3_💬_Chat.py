@@ -25,35 +25,34 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 .page-title {
     font-size: 2.2rem; font-weight: 700;
-    background: linear-gradient(135deg, #6C63FF, #48CAE4);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f4f4f5;
+    letter-spacing: -0.02em;
     margin-bottom: 0.2rem;
 }
 .suggestion-chip {
     display: inline-block;
-    background: #1A1A2E;
-    border: 1px solid #2A2A4A;
-    border-radius: 18px;
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 16px;
     padding: 0.4rem 0.9rem;
     font-size: 0.85rem;
-    color: #9A9AB0;
+    color: #a1a1aa;
     margin: 0.2rem 0.2rem;
     cursor: pointer;
 }
 .suggestion-chip:hover {
-    border-color: #6C63FF;
-    color: #E8E8F0;
+    border-color: #3f3f46;
+    color: #f4f4f5;
 }
 .reasoning-box {
-    background: #111122;
-    border: 1px solid #2A2A4A;
+    background: #18181b;
+    border: 1px solid #27272a;
     border-radius: 8px;
     padding: 0.8rem 1rem;
     margin-top: 0.5rem;
 }
-.status-ok  { color: #48BB78; font-weight: 600; }
-.status-err { color: #FC8181; font-weight: 600; }
+.status-ok  { color: #22c55e; font-weight: 600; }
+.status-err { color: #ef4444; font-weight: 600; }
 </style>
 """, unsafe_allow_html=True)
 
