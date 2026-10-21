@@ -32,71 +32,69 @@ html, body, [class*="css"] {
 header     { visibility: hidden; }
 footer     { visibility: hidden; }
 
-/* Gradient hero text */
+/* Clean Neutral Typography */
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #6C63FF 0%, #48CAE4 50%, #90E0EF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f4f4f5;
+    letter-spacing: -0.03em;
     line-height: 1.15;
     margin-bottom: 0.5rem;
 }
 .hero-sub {
-    font-size: 1.2rem;
-    color: #9A9AB0;
+    font-size: 1.15rem;
+    color: #a1a1aa;
     margin-bottom: 2rem;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 /* Feature cards */
 .feature-card {
-    background: linear-gradient(145deg, #1A1A2E 0%, #16213E 100%);
-    border: 1px solid #2A2A4A;
-    border-radius: 16px;
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1rem;
-    transition: border-color 0.3s ease, transform 0.2s ease;
+    transition: border-color 0.2s ease;
 }
 .feature-card:hover {
-    border-color: #6C63FF;
-    transform: translateY(-2px);
+    border-color: #3f3f46;
 }
-.feature-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.feature-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
 .feature-title {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    color: #E8E8F0;
+    color: #f4f4f5;
     margin-bottom: 0.4rem;
 }
-.feature-desc { font-size: 0.9rem; color: #7A7A9A; line-height: 1.5; }
+.feature-desc { font-size: 0.88rem; color: #a1a1aa; line-height: 1.5; }
 
 /* Status badge */
-.status-ok  { color: #48BB78; font-weight: 600; }
-.status-err { color: #FC8181; font-weight: 600; }
+.status-ok  { color: #22c55e; font-weight: 600; }
+.status-err { color: #ef4444; font-weight: 600; }
 
 /* Pipeline step */
 .pipeline-step {
-    background: #1A1A2E;
-    border-left: 3px solid #6C63FF;
+    background: #18181b;
+    border-left: 3px solid #3b82f6;
     border-radius: 0 8px 8px 0;
-    padding: 0.6rem 1rem;
-    margin: 0.4rem 0;
+    padding: 0.65rem 1rem;
+    margin: 0.45rem 0;
     font-size: 0.9rem;
-    color: #C8C8E0;
+    color: #d4d4d8;
 }
 
 /* Stat box */
 .stat-box {
-    background: linear-gradient(135deg, #1A1A2E, #0D0D1A);
-    border: 1px solid #2A2A4A;
-    border-radius: 12px;
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 10px;
     padding: 1.2rem 1.5rem;
     text-align: center;
 }
-.stat-num  { font-size: 2.2rem; font-weight: 700; color: #6C63FF; }
-.stat-label{ font-size: 0.85rem; color: #7A7A9A; margin-top: 0.2rem; }
+.stat-num  { font-size: 2.2rem; font-weight: 700; color: #3b82f6; }
+.stat-label{ font-size: 0.85rem; color: #a1a1aa; margin-top: 0.2rem; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -151,16 +149,16 @@ with col_hero:
 with col_img:
     st.markdown("""
     <div style="
-        background: linear-gradient(135deg, #1A1A2E 0%, #0D0D1A 100%);
-        border: 1px solid #2A2A4A;
-        border-radius: 20px;
+        background: #18181b;
+        border: 1px solid #27272a;
+        border-radius: 16px;
         padding: 2rem;
         text-align: center;
-        font-size: 5rem;
+        font-size: 4.5rem;
         margin-top: 1rem;
     ">
         🧠<br>
-        <span style="font-size:1rem; color:#7A7A9A;">Knowledge Graph Engine</span>
+        <span style="font-size:0.95rem; color:#a1a1aa; font-weight: 500;">Knowledge Graph Engine</span>
     </div>
     """, unsafe_allow_html=True)
 
