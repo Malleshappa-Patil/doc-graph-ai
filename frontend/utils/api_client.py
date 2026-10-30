@@ -76,9 +76,18 @@ def build_graph(document_id: str) -> dict:
             f"{API_BASE}/build-graph/{document_id}",
             timeout=BUILD_GRAPH_TIMEOUT,
         )
-        if r.ok:
-            return r.json()
-        return {"error": r.json().get("detail", r.text)}
+        try:
+            body = r.json()
+        except Exception:
+            body = None
+
+        if r.ok and isinstance(body, dict):
+            return body
+
+        if isinstance(body, dict) and "detail" in body:
+            return {"error": body["detail"]}
+
+        return {"error": f"Backend returned HTTP {r.status_code}: {r.text or 'No response body'}"}
     except Exception as exc:
         return {"error": str(exc)}
 
